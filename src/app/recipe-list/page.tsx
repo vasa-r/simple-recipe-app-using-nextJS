@@ -1,7 +1,7 @@
 import RecipeList from "@/components/RecipeList/RecipeList";
-import { RecipesResponse } from "@/types/types";
+import { Recipe } from "@/types/types";
 
-const fetchRecipes = async (): Promise<RecipesResponse> => {
+const fetchRecipes = async (): Promise<Recipe[]> => {
   try {
     const response = await fetch("https://dummyjson.com/recipes");
     const data = await response.json();

@@ -1,6 +1,4 @@
-import RecipeList from "@/components/RecipeList/RecipeList";
-
-type Recipe = {
+export type Recipe = {
   id: number;
   name: string;
   ingredients: string[];
@@ -22,3 +20,9 @@ type Recipe = {
 export type RecipesResponse = {
   recipes: Recipe[];
 };
+
+export interface RecipeDetailsProps {
+  params: {
+    id: string;
+  };
+}

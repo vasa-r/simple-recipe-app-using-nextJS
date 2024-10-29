@@ -1,7 +1,7 @@
 import { Skeleton } from "@/components/ui/skeleton";
 import React from "react";
 
-const loading = () => {
+const Loading = () => {
   return (
     <div className="w-full min-h-screen">
       <Skeleton />
@@ -9,4 +9,4 @@ const loading = () => {
   );
 };
 
-export default loading;
+export default Loading;
